@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+  
+  <head>
+    
+    <!-- title -->
+    <title>电影详情</title>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
+
+    <!-- 页面图标 -->
+    <link href="../static/img/favion.png" rel="shortcut icon">
+
+    <!-- 主css -->
+    <link href="../static/css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- 响应式 -->
+    <link href="../static/css/responsive.css" media="screen" rel="stylesheet" type="text/css">
+
+    <script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+    <!-- 自动切换主题色 -->
+    <link rel="stylesheet" href="../static/css/skins/{{.Color}}.css">
+  </head>
+  
+  <body id="top" class="page">
+
+    <!--<div class="loadingContainer">-->
+      <!--<div class="loading">-->
+        <!--<div class="rect1"></div>-->
+        <!--<div class="rect2"></div>-->
+        <!--<div class="rect3"></div>-->
+        <!--<div class="rect4"></div>-->
+        <!--<div class="rect5"></div>-->
+      <!--</div>&lt;!&ndash; end of loading &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; end of loading container &ndash;&gt;-->
+    
+    
+    <div class="allWrapper">
+      
+      <!-- Page Header -->
+      <section class="pageHeader section mainSection scrollAnchor darkSection" id="pageHeader">
+
+          <!-- 导航栏 -->
+      {{template "navigation.tpl" .}}
+
+      </section><!-- end of Page Header -->
+
+      
+      <!-- 详细信息 -->
+      <section class="movie section mainSection scrollAnchor lightSection" id="movie">
+        <div class="sectionWrapper">
+          <div class="container singlePostPage">
+            <div class="container singlePostPage">
+
+              <div class="row">
+
+                <div class="col-md-12 sectionTitle">
+                  <h1 class="sectionHeader">
+                    {{.Movie.Title}}
+                    <span class="generalBorder"></span>
+                  </h1><!-- end of sectionHeader -->
+                  <p>{{.Movie.Quote}}</p><!-- 引语-->
+                </div><!-- end of 标题 -->
+
+              </div><!-- end of 当前行 -->
+
+              <div class="row">
+              
+                <div class="col-md-12">
+
+                <div class="row">
+              
+                  <article class="col-md-12 post postWide singlePost">
+                    <div class="postWrapper">
+                      <div class="postMedia">
+                        <img class="poster" alt="剧照海报" src="../static/img/poster/{{.Movie.Poster}}">
+                        
+                      </div>
+                      <!--播放按钮 跳转预告片-->
+                      <div class="postContents">
+                        <a href="{{.Detail.Trailer}}" class="postIcon" target="_blank"><!-- todo 替换换对应url-->
+                        <i class="animated fa fa-play-circle"></i>
+                      </a>
+                        <h2 class="postTitle">影片信息</h2>
+                        <span class="movie-info-title">主演：</span>
+                        <span class="postDetails">{{.Detail.Actors}}</span>
+                        <br />
+                        <span class="movie-info-title">类型：</span>
+                        <span class="postDetails">{{.Movie.Tag}}</span>
+                        <br />
+                        <span class="movie-info-title">又名：</span>
+                        <span class="postDetails">{{.Movie.Subtitle}} / {{.Movie.Other}}</span>
+                        <br />
+                        <span class="movie-info-title">评分：</span>
+                        <span class="postDetails">{{.Movie.Star}}</span>
+                        <br />
+                        <br />
+                        <br />
+
+                        <h2 class="postTitle">剧情简介</h2>
+                        <span class="postDetails">{{.Detail.Story}}</span>
+                        <br />
+                        <br />
+
+                        <ul class="postMeta clearfix">
+
+                        </ul>
+
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                  </article><!-- end of 简介信息 -->
+
+                  <div class="clearfix"></div><!--end of 清除浮动-->
+
+                  {{/*相似推荐*/}}
+
+                  <div class="row">
+                      <article class="col-md-4 post">
+                            <div class="postWrapper">
+                                <div class="postMedia">
+                                    <a href="/movie?id={{.SMovie1.Id}}" title="post sample">
+                                        <img alt="电影海报" src="../static/img/poster/{{.SMovie1.Poster}}" title="{{.SMovie1.Title}}">
+                                    </a>
+                                </div>
+                                <div class="postContents">
+                                    <h4 class="postTitle">
+                                        <a href="/movie?id={{.SMovie1.Id}}" title="post sample">{{.SMovie1.Title}}</a>
+                                    </h4>
+                                    <p class="postDetails">{{.SMovie1.Quote}}</p>
+                                    <a class="readMore bordered generalLink" href="/movie?id={{.SMovie1.Id}}">查看详情</a>
+                                </div>
+                            </div>
+                        </article>
+                      <article class="col-md-4 post">
+                            <div class="postWrapper">
+                                <div class="postMedia">
+                                    <a href="/movie?id={{.SMovie2.Id}}" title="post sample">
+                                        <img alt="电影海报" src="../static/img/poster/{{.SMovie2.Poster}}" title="{{.SMovie2.Title}}">
+                                    </a>
+                                </div>
+                                <div class="postContents">
+                                    <h4 class="postTitle">
+                                        <a href="/movie?id={{.SMovie2.Id}}" title="post sample">{{.SMovie2.Title}}</a>
+                                    </h4>
+                                    <p class="postDetails">{{.SMovie2.Quote}}</p>
+                                    <a class="readMore bordered generalLink" href="/movie?id={{.SMovie2.Id}}">查看详情</a>
+                                </div>
+                            </div>
+                        </article>
+                      <article class="col-md-4 post">
+                            <div class="postWrapper">
+                                <div class="postMedia">
+                                    <a href="/movie?id={{.SMovie3.Id}}" title="post sample">
+                                        <img alt="电影海报" src="../static/img/poster/{{.SMovie3.Poster}}" title="{{.SMovie3.Title}}">
+                                    </a>
+                                </div>
+                                <div class="postContents">
+                                    <h4 class="postTitle">
+                                        <a href="/movie?id={{.SMovie3.Id}}" title="post sample">{{.SMovie3.Title}}</a>
+                                    </h4>
+                                    <p class="postDetails">{{.SMovie3.Quote}}</p>
+                                    <a class="readMore bordered generalLink" href="/movie?id={{.SMovie3.Id}}">查看详情</a>
+                                </div>
+                            </div>
+                        </article>
+                  </div>
+
+                  <div  data-anchor="comments" class="col-md-12 comments scrollAnchor" id="comments">
+
+                    <div class="singleComment clearfix">
+
+                      <div class="commentLevel1 commentLevel">
+                        <figure class="clearfix">
+                          <a class="thumb" href="#"><img src="../static/img/avatar/2.jpg" alt="user"></a>
+                          <figcaption class="commentContents">
+                            <h6 class="commenttitle">吃鱼的猫</h6>
+                            <ul class="commentMeta clearfix">
+                            </ul>
+                            <p class="commentDetails">{{.Detail.Comment1}}</p>
+                          </figcaption>
+                        </figure> 
+                      </div><!-- end of 评论 -->
+
+                    </div><!-- end of 单条评论 -->
+
+                    <div class="singleComment clearfix">
+
+                      <div class="commentLevel1 commentLevel">
+                        <figure class="clearfix">
+                          <a class="thumb" href="#"><img src="../static/img/avatar/3.jpg" alt="user"></a>
+                          <figcaption class="commentContents">
+                            <h6 class="commenttitle">鱼CCC</h6>
+                            <ul class="commentMeta clearfix">
+                            </ul>
+                            <p class="commentDetails"> {{.Detail.Comment2}}</p>
+                          </figcaption>
+                        </figure>
+                      </div><!-- end of 评论 -->
+
+                    </div><!-- end of 单条评论 -->
+
+                    <div class="singleComment clearfix">
+
+                      <div class="commentLevel1 commentLevel">
+                        <figure class="clearfix">
+                          <a class="thumb" href="#"><img src="../static/img/avatar/3.jpg" alt="user"></a>
+                          <figcaption class="commentContents">
+                            <h6 class="commenttitle">paramix</h6>
+                            <ul class="commentMeta clearfix">
+                            </ul>
+                            <p class="commentDetails"> {{.Detail.Comment3}}</p>
+                          </figcaption>
+                        </figure>
+                      </div><!-- end of 评论 -->
+
+                    </div><!-- end of 单条评论 -->
+
+
+
+                  </div><!-- end of 评论区 -->
+                  
+                  <div class="col-md-12 addComment add-send">
+                    
+                    <div class="widget addCommentWidget">
+                      <h5 class="widgetHeader">添加评论</h5>
+                      <div class="widgetBody">
+                        <form method="POST" class="addCommentForm">
+                          <ul class="row">
+                            <li class="col-md-6"><input type="text" value="昵称" autocomplete="off" onblur="if(this.value=='')this.value='昵称'" onfocus="if(this.value=='昵称')this.value=''" name="name" id="name" class="name"></li>
+                            <li class="col-md-12"><textarea name="comment" autocomplete="off" id="commentArea"></textarea></li>
+                          </ul>
+                          <button type="submit">&nbsp;&nbsp;&nbsp;&nbsp; 发表 &nbsp;&nbsp;&nbsp;&nbsp; </button>
+                        </form><!-- end of 表单 -->
+                      </div>
+                    </div>
+
+                  </div><!-- end of 写影评区 -->
+                </div>
+
+                </div><!-- end of 当前行 -->
+              </div>
+
+            </div>
+
+            
+
+            <div class="clearfix"></div>
+
+          </div><!-- end of container -->
+        </div><!-- end of section wrapper -->
+      </section><!-- end 介绍区 -->
+
+
+        <!-- footer -->
+    {{template "footer.tpl" .}}
+      
+      
+    </div><!-- end of all wrapper -->
+
+
+    <script src="../static/js/compile.js" type="text/javascript"></script>
+    <script src="../static/js/scripts.js" type="text/javascript"></script>
+    <script src="../static/js/bootstrap.js" type="text/javascript"></script>
+    <script src="../static/js/switcher.js" type="text/javascript"></script>
+
+  </body>
+</html>

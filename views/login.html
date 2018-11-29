@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+  <!--<![endif]-->
+  
+  <head>
+
+      <title>Movie Cat</title>
+      <meta charset="utf-8">
+      <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
+
+      <!-- 页面图标 -->
+      <link href="../static/img/favion.png" rel="shortcut icon">
+
+      <!-- 主css -->
+      <link href="../static/css/style.css" media="screen" rel="stylesheet" type="text/css">
+      <!-- 响应式 -->
+      <link href="../static/css/responsive.css" media="screen" rel="stylesheet" type="text/css">
+
+      <script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+
+    
+  </head>
+  
+  <body id="top" class="page">
+    
+
+    
+    <div class="loadingContainer">
+      <div class="loading">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+    
+    
+    <div class="allWrapper">
+      
+      <!-- Page Header -->
+      <section class="pageHeader section mainSection scrollAnchor darkSection" id="pageHeader">
+      {{template "navigation.tpl" .}}
+
+      </section><!-- end of Page Header -->
+
+
+
+      <!-- Login Area -->
+      <section class="loginArea section mainSection scrollAnchor graySection" id="loginArea">
+        <div class="sectionWrapper">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-md-12 sectionTitle">
+                <h2 class="sectionHeader">
+                  欢迎来到 Movie Cat
+                  <span class="generalBorder"></span>
+                </h2><!-- end of sectionHeader -->
+                <p></p>
+              </div><!-- end of section title -->
+              
+            </div><!-- end of row -->
+
+            <div class="row loginAreaContents">
+
+              <div class="col-md-12 formWrapper">
+                <form class="loginFormArea formArea" method="POST" action="/login">
+
+                  <ul class="row">
+                    <li class="col-md-6"><input class="loginName" id="loginName2" name="username" placeholder="Name" type="text" ></li>
+                    <li class="col-md-6"><input class="loginPassword" id="loginPassword2" name="username" placeholder="Password" type="password" autocomplete="off"></li>
+                    <li class="col-md-12"><button class="generalBtn loginBtn" type="submit">Login</button></li>
+                    <li class="col-md-12"><a class="generalLink" href="/register">点击这里创建一个新账户</a></li>
+                  </ul><!-- end of 当前行 -->
+
+                </form><!-- end of 登录表单 -->
+              </div>
+
+            </div>
+            
+          </div><!-- end of container -->
+        </div><!-- end of section wrapper -->
+      </section><!-- end 登录区 -->
+
+
+
+
+        <!-- footer -->
+    {{template "footer.tpl" .}}
+      
+    </div><!-- end of all wrapper -->
+
+
+
+    <script src="../static/js/compile.js" type="text/javascript"></script>
+    <script src="../static/js/scripts.js" type="text/javascript"></script>
+    <script src="../static/js/bootstrap.js" type="text/javascript"></script>
+    <script src="../static/js/switcher.js" type="text/javascript"></script>
+
+  </body>
+</html>

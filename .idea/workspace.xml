@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="420b5b62-3aac-415b-97ed-1d1d1200b448" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="IndexController.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/IndexController.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1092">
+              <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movie-details.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/movie-details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1085">
+              <caret line="148" column="118" selection-start-line="148" selection-start-column="118" selection-end-line="148" selection-end-column="118" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navigation.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/navigation.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="753">
+              <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="tpl" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>commentLevel</find>
+      <find>singlePostPage</find>
+      <find>list</find>
+      <find>.progress</find>
+      <find>postWide</find>
+      <find>dd</find>
+      <find>introduction</find>
+      <find>blog</find>
+      <find>moive</find>
+      <find>blogColmn2</find>
+      <find>blogColmn4</find>
+      <find>responsiveMainNavToggler</find>
+      <find>contentHeader</find>
+      <find>topMenu</find>
+      <find>top</find>
+      <find>metaContent</find>
+      <find>clientsCarousel</find>
+      <find>etabs</find>
+      <find>tabsContainer</find>
+      <find>models.User</find>
+      <find>registerFirstName2</find>
+      <find>registerFirstNam</find>
+      <find>registerFirstName</find>
+      <find>postSlider</find>
+      <find>owl-controls</find>
+      <find>postColumn</find>
+      <find>.post</find>
+      <find>postWrapper</find>
+      <find>post</find>
+      <find>.post .postMedia im</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/list</replace>
+      <replace>moive</replace>
+      <replace>movie</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>G:\mygo\src\Movie-Cat\static\css\skins</dir>
+    </dirStrings>
+  </component>
+  <component name="GOROOT" path="E:\Go" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/controllers/default.go" />
+        <option value="$PROJECT_DIR$/models/Movie.go" />
+        <option value="$PROJECT_DIR$/controllers/ListController.go" />
+        <option value="$PROJECT_DIR$/views/remark.html" />
+        <option value="$PROJECT_DIR$/static/js/switcher.js" />
+        <option value="$PROJECT_DIR$/static/css/reset.css" />
+        <option value="$PROJECT_DIR$/static/js/scripts.js" />
+        <option value="$PROJECT_DIR$/static/css/skins/red.css" />
+        <option value="$PROJECT_DIR$/static/css/skins/pink.css" />
+        <option value="$PROJECT_DIR$/static/css/skins/blue.css" />
+        <option value="$PROJECT_DIR$/static/css/skins/brown.css" />
+        <option value="$PROJECT_DIR$/static/css/skins/cyan.css" />
+        <option value="$PROJECT_DIR$/static/css/skins/lightgreen.css" />
+        <option value="$PROJECT_DIR$/views/footer.tpl" />
+        <option value="$PROJECT_DIR$/models/user.go" />
+        <option value="$PROJECT_DIR$/models/db.go" />
+        <option value="$PROJECT_DIR$/Filter/filter.go" />
+        <option value="$PROJECT_DIR$/views/register.html" />
+        <option value="$PROJECT_DIR$/static/css/skins/yellow.css" />
+        <option value="$PROJECT_DIR$/static/css/skins/purple.css" />
+        <option value="$PROJECT_DIR$/static/css/skins/graphite.css" />
+        <option value="$PROJECT_DIR$/static/css/skins/seafoam.css" />
+        <option value="$PROJECT_DIR$/static/css/skins/coconut.css" />
+        <option value="$PROJECT_DIR$/static/css/skins/tawny.css" />
+        <option value="$PROJECT_DIR$/controllers/DetailController.go" />
+        <option value="$PROJECT_DIR$/views/login.html" />
+        <option value="$PROJECT_DIR$/conf/app.conf" />
+        <option value="$PROJECT_DIR$/routers/router.go" />
+        <option value="$PROJECT_DIR$/models/movie.go" />
+        <option value="$PROJECT_DIR$/controllers/MovieListController.go" />
+        <option value="$PROJECT_DIR$/utils/PageUtil.go" />
+        <option value="$PROJECT_DIR$/views/movie-details.html" />
+        <option value="$PROJECT_DIR$/views/movie-rank.html" />
+        <option value="$PROJECT_DIR$/static/css/carousel.css" />
+        <option value="$PROJECT_DIR$/controllers/IndexController.go" />
+        <option value="$PROJECT_DIR$/views/movie-list.html" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/views/navigation.tpl" />
+        <option value="$PROJECT_DIR$/views/index.html" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Movie-Cat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Movie-Cat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Movie-Cat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Movie-Cat" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Movie-Cat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Movie-Cat" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Movie-Cat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Movie-Cat" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Movie-Cat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Movie-Cat" type="462c0819:PsiDirectoryNode" />
+              <item name="routers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Movie-Cat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Movie-Cat" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Movie-Cat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Movie-Cat" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Movie-Cat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Movie-Cat" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Movie-Cat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Movie-Cat" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../loginTest" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Movie-Cat" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="Movie-Cat" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="Movie-Cat" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1640625" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4108053" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32881" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/css/carousel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18171">
+          <caret line="673" column="42" selection-start-line="673" selection-start-column="42" selection-end-line="673" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/movie-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2268">
+          <caret line="84" column="44" lean-forward="true" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/movie-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3996">
+          <caret line="148" column="148" selection-start-line="148" selection-start-column="148" selection-end-line="148" selection-end-column="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/movie.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/DetailController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/switcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="103" column="4" lean-forward="true" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/movie-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/MovieListController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3009">
+          <caret line="177" column="100" selection-start-line="177" selection-start-column="100" selection-end-line="177" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/navigation.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/remark.html" />
+    <entry file="file://$PROJECT_DIR$/controllers/default.go" />
+    <entry file="file://$PROJECT_DIR$/controllers/ListController.go" />
+    <entry file="file://$PROJECT_DIR$/../github.com/astaxie/beego/orm/types.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3029">
+          <caret line="136" column="4" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/Go/src/strings/strings.go" />
+    <entry file="file://$PROJECT_DIR$/views/remark.html" />
+    <entry file="file://$PROJECT_DIR$/static/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="1083" selection-start-line="1083" selection-end-line="1083" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11500">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/skins/pink.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="107" column="1" selection-start-line="107" selection-start-column="1" selection-end-line="107" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/skins/blue.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/skins/cyan.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/skins/lightgreen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="102" column="24" lean-forward="true" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/footer.tpl" />
+    <entry file="file://$PROJECT_DIR$/models/db.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters/filter.go" />
+    <entry file="file://G:/Go/src/math/rand/rand.go" />
+    <entry file="file://$PROJECT_DIR$/models/user.go" />
+    <entry file="file://$PROJECT_DIR$/views/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/skins/graphite.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/skins/coconut.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/skins/tawny.css" />
+    <entry file="file://$PROJECT_DIR$/static/js/switcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="103" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/skins/red.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1694">
+          <caret line="106" column="53" selection-start-line="96" selection-end-line="106" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/skins/seafoam.css" />
+    <entry file="file://$PROJECT_DIR$/views/login.html" />
+    <entry file="file://$PROJECT_DIR$/utils/PageUtil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/MovieListController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/movie-rank.html" />
+    <entry file="file://$PROJECT_DIR$/static/css/carousel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17783">
+          <caret line="673" column="42" selection-start-line="673" selection-start-column="42" selection-end-line="673" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/movie.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="158" column="1" selection-start-line="158" selection-start-column="1" selection-end-line="158" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/DetailController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/IndexController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/movie-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1085">
+          <caret line="148" column="118" selection-start-line="148" selection-start-column="118" selection-end-line="148" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/navigation.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="678" column="41" lean-forward="true" selection-start-line="678" selection-start-column="41" selection-end-line="678" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/movie-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="99" column="40" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

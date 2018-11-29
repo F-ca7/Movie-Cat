@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+  <!--<![endif]-->
+  
+  <head>
+
+    <title>注册Movie cat</title>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
+
+    <!-- 页面图标 -->
+    <link href="../static/img/favion.png" rel="shortcut icon">
+
+    <!-- 主css -->
+    <link href="../static/css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <!-- 响应式 -->
+    <link href="../static/css/responsive.css" media="screen" rel="stylesheet" type="text/css">
+
+    <script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+
+
+  </head>
+  
+  <body id="top" class="page">
+
+    {{/**/}}
+    {{/*<div class="loadingContainer">*/}}
+      {{/*<div class="loading">*/}}
+        {{/*<div class="rect1"></div>*/}}
+        {{/*<div class="rect2"></div>*/}}
+        {{/*<div class="rect3"></div>*/}}
+        {{/*<div class="rect4"></div>*/}}
+        {{/*<div class="rect5"></div>*/}}
+      {{/*</div><!-- end of loading -->*/}}
+    {{/*</div><!-- end of loading container -->*/}}
+    
+    
+    <div class="allWrapper">
+      
+      <!-- Page Header -->
+      <section class="pageHeader section mainSection scrollAnchor darkSection" id="pageHeader">
+      {{template "navigation.tpl" .}}
+
+      </section><!-- end of Page Header -->
+
+
+
+      <!-- Register Area -->
+      <section class="registerArea section mainSection scrollAnchor graySection" id="registerArea">
+        <div class="sectionWrapper">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-md-12 sectionTitle">
+                <h2 class="sectionHeader">
+                  Welcome to Movie Cat
+                  <span class="generalBorder"></span>
+                </h2><!-- end of sectionHeader -->
+                <p></p>
+              </div><!-- end of section title -->
+              
+            </div><!-- end of row -->
+
+            <div class="row registerAreaContents">
+
+              <div class="col-md-12 formWrapper">
+                <form class="registerFormArea formArea" method="POST" action="/register" onsubmit="function check_submit() {
+
+                }
+                return check_submit()">
+
+                  <ul class="row">
+                    <li class="col-md-6"><input class="username" id="username" name="username" placeholder="昵称" type="text" autocomplete="off"></li>
+                    <li class="col-md-6"><input class="email" id="email" name="email" placeholder="电子邮箱" type="email" autocomplete="off"></li>
+                    <li class="col-md-6"><input class="password" id="password" name="password" placeholder="密码" type="password"></li>
+                    <li class="col-md-6"><input class="password_comfirm" id="password_confirm" name="PasswordConfirm" placeholder="确认密码" type="password"></li>
+                    <li class="col-md-12"><button class="generalBtn loginBtn" type="submit">Register</button></li>
+                  </ul><!-- end of row -->
+
+                </form><!-- end of 注册表单-->
+              </div><!-- end of col-md-12 -->
+
+            </div><!-- end of registerAreaContents -->
+            
+          </div><!-- end of container -->
+        </div><!-- end of section wrapper -->
+      </section><!-- end of 注册区 -->
+
+
+
+        <!-- footer -->
+    {{template "footer.tpl" .}}
+
+
+
+    </div><!-- end of all wrapper -->
+
+
+    <script src="../static/js/compile.js" type="text/javascript"></script>
+    <script src="../static/js/scripts.js" type="text/javascript"></script>
+    <script src="../static/js/bootstrap.js" type="text/javascript"></script>
+    <script src="../static/js/switcher.js" type="text/javascript"></script>
+    <script>
+        var flag = true
+        function confirmName(){
+            var name=document.getElementById("username");
+            name.onblur=function(){
+                if((name.value).length!=0){
+                    reg=/^[\u4e00-\u9fa5_a-zA-Z0-9-]{1,16}$/g;
+                    if(!reg.test(name.value)){
+                        alert("对不起，输入的用户名限16个字符，支持中英文、数字、减号或下划线 ");
+                        flag = false
+                    }
+                }
+            };
+        }
+        function confirmEmail(){
+            var email=document.getElementById("email");
+            email.onblur=function(){
+                if((email.value).length!=0){
+                    reg=/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/ ;
+                    if(!reg.test(email.value)){
+                        alert("对不起，您输入的邮箱格式不正确!");
+                        flag = false
+                    }
+                }
+            };
+        }
+        function confirmPassword(){
+            var password=document.getElementById("password");
+            password.onblur=function(){
+                if((password.value).length!=0){
+                    reg=/^(\w){6,16}$/;
+                    if(!reg.test(password.value)){
+                        alert("对不起，您输入的密码格式不正确，应为6-16位!");
+
+                    }
+                }
+            };
+        }
+        function confiemPasswordAgin(){
+            var againpassword=document.getElementById("password_confirm");
+
+            var password=document.getElementById("password");
+            againpassword.onblur=function(){
+                // alert(againpassword.value);
+                if(password.value.length!=againpassword.value.length){
+                    alert("密码输入不匹配,请重新输入");
+                }
+                if(password.value.indexOf(againpassword.value)==-1){
+                    alert("密码输入不匹配,请重新输入");
+                }
+            };
+        }
+        window.onload=function(){
+            confirmName();
+            confirmEmail();
+            confirmPassword();
+            confiemPasswordAgin();
+        };
+    </script>
+  </body>
+</html>
