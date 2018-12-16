@@ -5,6 +5,10 @@ import (
 	"github.com/astaxie/beego"
 	"strconv"
 	"strings"
+	"fmt"
+	"math/rand"
+	"time"
+	"Movie-Cat/filters"
 )
 
 type DetailController struct {
@@ -20,12 +24,25 @@ func (c *DetailController) ShowDetails()  {
 	s1 := models.GetMovieById(sMovie.SId1)
 	s2 := models.GetMovieById(sMovie.SId2)
 	s3 := models.GetMovieById(sMovie.SId3)
+	rand.Seed(time.Now().UnixNano())
+	//获取评论
+	comments := models.FindCommentsByMoiveId(id)
+	c.Data["Comments"]	= comments
+	//随机头像
+	rand_ava := rand.Intn(7)+4
+	//fmt.Printf("随机头像:%d\n",rand_ava)
+	c.Data["Rand"] = rand_ava
+
 	c.Data["Color"] = GetColorByTag(movie.Tag)
 	c.Data["Movie"] = movie
 	c.Data["Detail"] = models.GetDetailByMid(movie.Mid)
+
 	c.Data["SMovie1"] = s1
 	c.Data["SMovie2"] = s2
 	c.Data["SMovie3"] = s3
+	isLogin, user := filters.IsLogin(c.Ctx)
+	c.Data["IsLogin"] = isLogin
+	c.Data["User"] = user
 	c.TplName = "movie-details.html"
 }
 
@@ -48,4 +65,15 @@ func GetColorByTag(p string)  string{
 	} else {					//其他
 		return "red"
 	}
+}
+
+func (c *DetailController)PostComment	(){
+	content,username := c.Input().Get("comment"),c.Input().Get("username")
+	movie_id,_ := strconv.Atoi(c.Input().Get("movie-id"))
+	comment := models.Comment{MovieId:movie_id, Content:content, Username:username}
+	models.SaveComment(comment)
+	fmt.Printf("%s 发布评论成功",username)
+	url := fmt.Sprintf("/movie?id=%d",movie_id)
+
+	c.Redirect(url,302)
 }

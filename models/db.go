@@ -17,5 +17,5 @@ func Init() {
 	orm.RegisterDriver("mysql", orm.DRMySQL)
 
 	orm.RegisterDataBase("default", "mysql", dsn)
-	orm.RegisterModel(new(Movie),new(User))
+	orm.RegisterModel(new(Movie),new(User),new(Comment))
 }

@@ -21,4 +21,5 @@ func init() {
 	beego.Router("/search", &controllers.MovieListController{},"get:SearchMovies")
 
 	beego.Router("/movie", &controllers.DetailController{},"get:ShowDetails")
+	beego.Router("/postcomment", &controllers.DetailController{},"post:PostComment")
 }

@@ -116,7 +116,6 @@
                   <div class="clearfix"></div><!--end of 清除浮动-->
 
                   {{/*相似推荐*/}}
-
                   <div class="row">
                       <article class="col-md-4 post">
                             <div class="postWrapper">
@@ -170,11 +169,26 @@
 
                   <div  data-anchor="comments" class="col-md-12 comments scrollAnchor" id="comments">
 
-                    <div class="singleComment clearfix">
+                      {{range .Comments}}
+                          <div class="singleComment clearfix">
+                              <div class="commentLevel1 commentLevel">
+                                  <figure class="clearfix">
+                                      <a class="thumb" href="#"><img src="../static/img/avatar/{{$.Rand}}.jpg" alt="user"></a>
+                                      <figcaption class="commentContents">
+                                          <h6 class="commenttitle">{{.Username}}</h6>
+                                          <ul class="commentMeta clearfix">
+                                          </ul>
+                                          <p class="commentDetails">{{.Content}}</p>
+                                      </figcaption>
+                                  </figure>
+                              </div><!-- end of 评论 -->
 
+                          </div><!-- end of 单条评论 -->
+                      {{end}}
+                    <div class="singleComment clearfix">
                       <div class="commentLevel1 commentLevel">
                         <figure class="clearfix">
-                          <a class="thumb" href="#"><img src="../static/img/avatar/2.jpg" alt="user"></a>
+                          <a class="thumb" href="#"><img src="../static/img/avatar/1.jpg" alt="user"></a>
                           <figcaption class="commentContents">
                             <h6 class="commenttitle">吃鱼的猫</h6>
                             <ul class="commentMeta clearfix">
@@ -190,7 +204,7 @@
 
                       <div class="commentLevel1 commentLevel">
                         <figure class="clearfix">
-                          <a class="thumb" href="#"><img src="../static/img/avatar/3.jpg" alt="user"></a>
+                          <a class="thumb" href="#"><img src="../static/img/avatar/2.jpg" alt="user"></a>
                           <figcaption class="commentContents">
                             <h6 class="commenttitle">鱼CCC</h6>
                             <ul class="commentMeta clearfix">
@@ -227,11 +241,17 @@
                     <div class="widget addCommentWidget">
                       <h5 class="widgetHeader">添加评论</h5>
                       <div class="widgetBody">
-                        <form method="POST" class="addCommentForm">
+                        <form method="POST" class="addCommentForm" action="/postcomment">
                           <ul class="row">
-                            <li class="col-md-6"><input type="text" value="昵称" autocomplete="off" onblur="if(this.value=='')this.value='昵称'" onfocus="if(this.value=='昵称')this.value=''" name="name" id="name" class="name"></li>
-                            <li class="col-md-12"><textarea name="comment" autocomplete="off" id="commentArea"></textarea></li>
+                            <li class="col-md-6">
+                                {{if .IsLogin}}
+                                    <input type="text" value="{{.User.Username}}" readonly="readonly" name="username" id="name" class="name">
+                                    {{else}}
+                                    <input type="text" value="昵称" autocomplete="off" onblur="if(this.value=='')this.value='昵称'" onfocus="if(this.value=='昵称')this.value=''" name="username" id="name" class="name"></li>
+                                {{end}}
+                              <li class="col-md-12"><textarea name="comment" autocomplete="off" id="commentArea"></textarea></li>
                           </ul>
+                            <input type="hidden" value="{{.Movie.Id}}" name="movie-id">
                           <button type="submit">&nbsp;&nbsp;&nbsp;&nbsp; 发表 &nbsp;&nbsp;&nbsp;&nbsp; </button>
                         </form><!-- end of 表单 -->
                       </div>

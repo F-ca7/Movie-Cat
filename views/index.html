@@ -50,7 +50,7 @@
             <img src="../static/img/cover/{{.Cover1.ImgPath}}" alt="封面1">
             <div class="captions">
                 <p class="links animated">{{.Cover1.Sentence}}
-                <a class="animated link sliderLinks light details" href="/movie?id=7">详细信息</a>
+                <a class="animated link sliderLinks light details" href="/movie?id=7" target="_blank">详细信息</a>
                 <a class="animated link sliderLinks light join" >添加至喜爱</a>
               </p><!-- end of links -->
             </div><!-- end of captions -->
@@ -62,7 +62,7 @@
             <img src="../static/img/cover/{{.Cover2.ImgPath}}" alt="封面2">
             <div class="captions">
                 <p class="links animated">{{.Cover2.Sentence}}
-                <a class="animated link sliderLinks light details" href="/movie?id=27" >详细信息</a>
+                <a class="animated link sliderLinks light details" href="/movie?id=27" target="_blank" >详细信息</a>
                 <a class="animated link sliderLinks light join"  >添加至喜爱</a>
               </p><!-- end of links -->
             </div><!-- end of captions -->
@@ -73,7 +73,7 @@
             <img src="../static/img/cover/{{.Cover3.ImgPath}}" alt="封面3">
             <div class="captions">
               <h2 class="links animated">{{.Cover3.Sentence}}
-                <a class="animated link sliderLinks light details" href="/movie?id=33" >详细信息</a>
+                <a class="animated link sliderLinks light details" href="/movie?id=33" target="_blank">详细信息</a>
                 <a class="animated link sliderLinks light join" >添加至喜爱</a>
               </h2><!-- end of links -->
             </div><!-- end of captions -->
@@ -84,7 +84,7 @@
             <img src="../static/img/cover/{{.Cover4.ImgPath}}" alt="封面4">
             <div class="captions">
               <p class="links animated">{{.Cover4.Sentence}}
-                <a class="animated link sliderLinks light details" href="/movie?id=18" >详细信息</a>
+                <a class="animated link sliderLinks light details" href="/movie?id=18" target="_blank">详细信息</a>
                 <a class="animated link sliderLinks light join" >添加至喜爱</a>
               </p><!-- end of links -->
             </div><!-- end of captions -->
@@ -235,11 +235,14 @@
                   <div class="singleTestmonial">
                     <div class="testmonialsTopContents clearfix">
                       <img alt="testmonials tip" class="tip" src="../static/img/tip.png">
+                        <a href="/movie?id={{.Selected0.Id}}" >
                       <img alt="testmonials user" class="testmonialthumb" src="../static/img/avatar/1.jpg">
-                      <blockquote><p>新的哲学，开创动作片之先河</p></blockquote>
+                        </a>
+                            <a href="/movie?id={{.Selected0.Id}}" >
+                      <blockquote><p>{{.Selected0.Comment1}}</p></blockquote>
                     </div>
                     <div class="testmonialsBottomContents">
-                      <p><a class="userName" href="#" title="user name">Fcat</a></p>
+                      <p><a class="userName" href="/movie?id={{.Selected0.Id}}" title="user name">Fcat</a></p>
                     </div>
                   </div>
                   
@@ -249,11 +252,13 @@
                   <div class="singleTestmonial">
                     <div class="testmonialsTopContents clearfix">
                       <img alt="testmonials tip" class="tip" src="../static/img/tip.png">
+                        <a href="/movie?id={{.Selected1.Id}}" >
                       <img alt="testmonials user" class="testmonialthumb" src="../static/img/avatar/2.jpg">
-                      <blockquote><p>你的漫漫人生，我有多少戏份</p></blockquote>
+                        </a>
+                      <blockquote><p>{{.Selected1.Comment1}}</p></blockquote>
                     </div>
                     <div class="testmonialsBottomContents">
-                      <p><a class="userName" href="#" title="user name">小鱼</a></p>
+                      <p><a class="userName" href="/movie?id={{.Selected1.Id}}" title="user name">小鱼</a></p>
                     </div>
                   </div>
 
@@ -263,11 +268,13 @@
                   <div class="singleTestmonial">
                     <div class="testmonialsTopContents clearfix">
                       <img alt="testmonials tip" class="tip" src="../static/img/tip.png">
+                        <a href="/movie?id={{.Selected2.Id}}" >
                       <img alt="testmonials user" class="testmonialthumb" src="../static/img/avatar/3.jpg">
-                      <blockquote><p>对天空的追逐，永不停止。</p></blockquote>
+                        </a>
+                      <blockquote><p>{{.Selected2.Comment1}}</p></blockquote>
                     </div>
                     <div class="testmonialsBottomContents">
-                      <p><a class="userName" href="#" title="user name">大猫</a></p>
+                      <p><a class="userName" href="/movie?id={{.Selected2.Id}}" title="user name">大猫</a></p>
                     </div>
                   </div>
                   
@@ -277,11 +284,13 @@
                   <div class="singleTestmonial">
                     <div class="testmonialsTopContents clearfix">
                       <img alt="testmonials tip" class="tip" src="../static/img/tip.png">
-                      <img alt="testmonials user" class="testmonialthumb" src="../static/img/avatar/4.jpg">
-                      <blockquote><p>一个孩子在启蒙时期，能够遇到一位好的老师，真的是一件非常幸运的事情。</p></blockquote>
+                        <a href="/movie?id={{.Selected3.Id}}" >
+                            <img alt="testmonials user" class="testmonialthumb" src="../static/img/avatar/4.jpg">
+                        </a>
+                      <blockquote><p>{{.Selected3.Comment1}}</p></blockquote>
                     </div>
                     <div class="testmonialsBottomContents">
-                      <p><a class="userName" href="#" title="user name">大小鱼</a></p>
+                      <p><a class="userName" href="/movie?id={{.Selected3.Id}}" title="user name">大小鱼</a></p>
                     </div>
                   </div>
                 </div><!-- end of 单条影评 -->
@@ -290,11 +299,11 @@
                   <div class="singleTestmonial">
                     <div class="testmonialsTopContents clearfix">
                       <img alt="testmonials tip" class="tip" src="../static/img/tip.png">
-                      <img alt="testmonials user" class="testmonialthumb" src="../static/img/avatar/5.jpg">
-                      <blockquote><p>小丑把该说的不该说的都说了 蝙蝠侠把该做的不该做的都做了 生命在于抉择 英雄的时代已经逝去了</p></blockquote>
+                      <a href="/movie?id={{.Selected4.Id}}" ><img alt="testmonials user" class="testmonialthumb" src="../static/img/avatar/5.jpg"></a>
+                      <blockquote><p>{{.Selected4.Comment1}}</p></blockquote>
                     </div>
                     <div class="testmonialsBottomContents">
-                      <p><a class="userName" href="#" title="user name">paralysm</a></p>
+                      <p><a class="userName" href="/movie?id={{.Selected4.Id}}" title="user name">paralysm</a></p>
                     </div><!-- end of testmonials bottom contents -->
                   </div>
                 </div><!-- end of 单条影评 -->

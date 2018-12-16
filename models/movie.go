@@ -25,6 +25,7 @@ type Movie struct {
 }
 
 type MovieDetail struct {
+	Id		int
 	Mid      string
 	Actors  string
 	Story	string
@@ -116,11 +117,24 @@ func GetMoviesByKeyword(keyword string)   (bool,[]*Movie) {
 	return n!=0,movieList
 }
 
-//详细信息
+//详细信息By MId
 func GetDetailByMid(mid string) *MovieDetail {
 	o := orm.NewOrm()
 	var detail *MovieDetail
 	query := fmt.Sprintf("select * from `movie-detail` where mid=%s",mid)
+	err := o.Raw(query).QueryRow(&detail)
+	if err!=nil{
+		fmt.Println(err)
+	}
+	return detail
+}
+
+
+//详细信息By Id
+func GetDetailById(id int) *MovieDetail {
+	o := orm.NewOrm()
+	var detail *MovieDetail
+	query := fmt.Sprintf("select * from `movie-detail` where id=%d",id)
 	err := o.Raw(query).QueryRow(&detail)
 	if err!=nil{
 		fmt.Println(err)

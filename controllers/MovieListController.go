@@ -4,6 +4,7 @@ import (
 	"github.com/astaxie/beego"
 	"Movie-Cat/models"
 	"strconv"
+	"Movie-Cat/filters"
 )
 
 type MovieListController struct {
@@ -16,6 +17,9 @@ func (c *MovieListController) ListMovies()  {
 	flag,list := models.GetMoviesByCate(category)
 	c.Data["Exist"] = flag
 	c.Data["List"] = list
+	isLogin, user := filters.IsLogin(c.Ctx)
+	c.Data["IsLogin"] = isLogin
+	c.Data["User"] = user
 	c.TplName = "movie-list.html"
 }
 

@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"github.com/sluu99/uuid"
 	"Movie-Cat/filters"
+	"crypto/md5"
 )
 var list = []string{
 	"1291552","1291560","1291561","1292001","1292063","1292220","1292370","1292720",
@@ -30,6 +31,7 @@ func (c *IndexController) Index()  {
 	movie2 := models.GetMovieById(27)
 	movie3 := models.GetMovieById(33)
 	movie4 := models.GetMovieById(18)
+	selected := GetRandomSelected()
 	c.Data["Cover1"] = Cover{"p2189370932.webp",movie1.Quote}
 	c.Data["Cover2"] = Cover{"p2151543123.webp",movie2.Quote}
 	c.Data["Cover3"] = Cover{"p1325714821.webp",movie3.Quote}
@@ -39,6 +41,11 @@ func (c *IndexController) Index()  {
 	c.Data["Banner2"] = movies[2]
 	c.Data["Banner3"] = movies[3]
 	c.Data["Banner4"] = movies[4]
+	c.Data["Selected0"] = selected[0]
+	c.Data["Selected1"] = selected[1]
+	c.Data["Selected2"] = selected[2]
+	c.Data["Selected3"] = selected[3]
+	c.Data["Selected4"] = selected[4]
 	isLogin, user := filters.IsLogin(c.Ctx)
 	c.Data["IsLogin"] = isLogin
 	c.Data["User"] = user
@@ -46,11 +53,19 @@ func (c *IndexController) Index()  {
 }
 
 func GetRandomBanner()  []models.Movie{
-
 	index := generateRandomNumber(0, len(list),5)
 	var movies = make([]models.Movie,5)
 	for i:=range movies{
 		movies[i] = models.GetMovieByMId(list[index[i]])
+	}
+	return movies
+}
+
+func GetRandomSelected()  []*models.MovieDetail{
+	index := generateRandomNumber(1, 250,5)
+	var movies = make([]*models.MovieDetail,5)
+	for i:=range movies{
+		movies[i] = models.GetDetailById(index[i])
 	}
 	return movies
 }
@@ -91,7 +106,10 @@ func (c *IndexController)ShowRegister  (){
 
 func (c *IndexController)Login () {
 	username, password:= c.Input().Get("username"), c.Input().Get("password")
-	if flag, user := models.Login(username, password); flag {
+	data := []byte(password)
+	has := md5.Sum(data)
+	md5pass := fmt.Sprintf("%x", has) //将[]byte转成16进制
+	if flag, user := models.Login(username, md5pass); flag {
 		c.SetSecureCookie(beego.AppConfig.String("cookie.secure"), beego.AppConfig.String("cookie.token"), user.Token, 30*24*60*60, "/", beego.AppConfig.String("cookie.domain"), false, true)
 		fmt.Printf("用户%s登陆成功", username)
 	} else {
@@ -112,7 +130,10 @@ func (c *IndexController)Register  (){
 		token := uuid.Rand().Hex()
 		count := rand.Intn(10)+1
 		avatar := fmt.Sprintf("/static/img/avatar/%d.jpg",count)
-		user := models.User{Username: username,Email:email ,Password: password, Avatar: avatar, Token: token}
+		data := []byte(password)
+		has := md5.Sum(data)
+		md5pass := fmt.Sprintf("%x", has) //将[]byte转成16进制
+		user := models.User{Username: username,Email:email ,Password: md5pass, Avatar: avatar, Token: token}
 		models.SaveUser(&user)
 		//7*24*60*60是7天；路径是"/"；domain是localhost；https关；http开
 		c.SetSecureCookie(beego.AppConfig.String("cookie.secure"), beego.AppConfig.String("cookie.token"), token, 7 * 24 * 60 * 60, "/", beego.AppConfig.String("cookie.domain"), false, true)
